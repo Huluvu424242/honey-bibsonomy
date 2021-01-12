@@ -6,8 +6,8 @@ import {SpeakerOptions} from "./speaker-options";
 
 
 @Component({
-  tag: "honey-speaker",
-  styleUrl: "honey-speaker.css",
+  tag: "honey-bibsonomy",
+  styleUrl: "honey-bibsonomy.css",
   assetsDirs: ['assets'],
   shadow: true
 })
