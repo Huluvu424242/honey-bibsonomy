@@ -1,4 +1,4 @@
-# honey-speaker
+# honey-bibsonomy
 
 <!-- Auto Generated Below -->
 
