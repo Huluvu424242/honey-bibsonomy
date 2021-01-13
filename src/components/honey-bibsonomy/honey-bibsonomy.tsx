@@ -2,7 +2,6 @@ import {Component, Element, Event, EventEmitter, h, Host, Listen, Method, Prop, 
 import {Sprachausgabe} from "../../libs/sprachausgabe"
 import {Logger} from "../../libs/logger";
 import {Fileloader} from "../../libs/fileloader";
-import {SpeakerOptions} from "./speaker-options";
 
 
 @Component({
