@@ -83,7 +83,7 @@ Type: `Promise<void>`
 
 
 
-### `updateOptions(options: SpeakerOptions) => Promise<void>`
+### `updateOptions(options: any) => Promise<void>`
 
 Update speaker options
 

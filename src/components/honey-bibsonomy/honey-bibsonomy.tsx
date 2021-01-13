@@ -11,7 +11,7 @@ import {SpeakerOptions} from "./speaker-options";
   assetsDirs: ['assets'],
   shadow: true
 })
-export class HoneySpeaker {
+export class HoneyBibsonomy {
 
   /**
    * Modul zur Sprachausgabe

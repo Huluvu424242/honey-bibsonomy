@@ -7,7 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { SpeakerOptions } from "./components/honey-bibsonomy/speaker-options";
 export namespace Components {
-    interface HoneySpeaker {
+    interface HoneyBibsonomy {
         /**
           * i18n language ident for Web Speech API: de-DE or en or de ...
          */
@@ -68,7 +68,7 @@ export namespace Components {
           * Update speaker options
           * @param options : SpeakerOptions plain object to set the options
          */
-        "updateOptions": (options: SpeakerOptions) => Promise<void>;
+        "updateOptions": (options: any) => Promise<void>;
         /**
           * enable console logging
          */
@@ -80,18 +80,18 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLHoneySpeakerElement extends Components.HoneySpeaker, HTMLStencilElement {
+    interface HTMLHoneyBibsonomyElement extends Components.HoneyBibsonomy, HTMLStencilElement {
     }
-    var HTMLHoneySpeakerElement: {
-        prototype: HTMLHoneySpeakerElement;
-        new (): HTMLHoneySpeakerElement;
+    var HTMLHoneyBibsonomyElement: {
+        prototype: HTMLHoneyBibsonomyElement;
+        new (): HTMLHoneyBibsonomyElement;
     };
     interface HTMLElementTagNameMap {
-        "honey-bibsonomy": HTMLHoneySpeakerElement;
+        "honey-bibsonomy": HTMLHoneyBibsonomyElement;
     }
 }
 declare namespace LocalJSX {
-    interface HoneySpeaker {
+    interface HoneyBibsonomy {
         /**
           * i18n language ident for Web Speech API: de-DE or en or de ...
          */
@@ -158,14 +158,14 @@ declare namespace LocalJSX {
         "voicename"?: string;
     }
     interface IntrinsicElements {
-        "honey-bibsonomy": HoneySpeaker;
+        "honey-bibsonomy": HoneyBibsonomy;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "honey-bibsonomy": LocalJSX.HoneySpeaker & JSXBase.HTMLAttributes<HTMLHoneySpeakerElement>;
+            "honey-bibsonomy": LocalJSX.HoneyBibsonomy & JSXBase.HTMLAttributes<HTMLHoneyBibsonomyElement>;
         }
     }
 }
